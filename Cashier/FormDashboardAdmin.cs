@@ -103,5 +103,21 @@ namespace Cashier
             frmlaporan.Show();
             lblActiveMenu.Text = "Laporan";
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbBarang_Click(object sender, EventArgs e)
+        {
+            FormKelolaBarang frmKelolaBarang = new FormKelolaBarang();
+            frmKelolaBarang.TopLevel = false;
+            frmKelolaBarang.AutoScroll = true;
+            this.panelContent.Controls.Clear();
+            this.panelContent.Controls.Add(frmKelolaBarang);
+            frmKelolaBarang.Show();
+            lblActiveMenu.Text = "Kelola Barang";
+        }
     }
 }

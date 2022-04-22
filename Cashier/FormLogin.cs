@@ -38,7 +38,9 @@ namespace Cashier
                 }
                 else if (user.role == 2)
                 {
-                    //kode untuk menampilkan halaman dashboard khusus kasir
+                    FormDashboardKasir frmKasir = new FormDashboardKasir(user);
+                    frmKasir.Show();
+                    this.Hide();
                 }
             }
             else
