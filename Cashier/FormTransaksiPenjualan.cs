@@ -126,6 +126,7 @@ namespace Cashier
             //view report
             FormCetakBuktiTransaksi frmcetak = new FormCetakBuktiTransaksi(txtboxIdTransaksi.Text);
             frmcetak.Show();
+            
         }
     }
 }
